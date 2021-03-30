@@ -45,7 +45,8 @@ inputs = feature_extractor(images=image, return_tensors="pt")
 outputs = model(**inputs)
 logits = outputs.logits
 # model predicts one of the 1000 ImageNet classes
-predicted_class = logits.argmax(-1).item()
+predicted_class_idx = logits.argmax(-1).item()
+print("Predicted class:", model.config.id2label[predicted_class_idx])
 ```
 
 Currently, both the feature extractor and model  support PyTorch. Tensorflow and JAX/FLAX are coming soon, and the API of ViTFeatureExtractor might change.
