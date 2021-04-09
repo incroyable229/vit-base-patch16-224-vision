@@ -3,13 +3,8 @@ license: apache-2.0
 tags:
 - image-classification
 datasets:
-- cifar10
-- cifar100
 - imagenet
 - imagenet-21k
-- oxford-iiit-pets
-- oxford-flowers-102
-- vtab
 ---
 
 # Vision Transformer (base-sized model) 
