@@ -34,10 +34,13 @@ Here is how to use this model to classify an image of the COCO 2017 dataset into
 from transformers import ViTFeatureExtractor, ViTForImageClassification
 from PIL import Image
 import requests
+
 url = 'http://images.cocodataset.org/val2017/000000039769.jpg'
 image = Image.open(requests.get(url, stream=True).raw)
+
 feature_extractor = ViTFeatureExtractor.from_pretrained('google/vit-base-patch16-224')
 model = ViTForImageClassification.from_pretrained('google/vit-base-patch16-224')
+
 inputs = feature_extractor(images=image, return_tensors="pt")
 outputs = model(**inputs)
 logits = outputs.logits
@@ -46,7 +49,7 @@ predicted_class_idx = logits.argmax(-1).item()
 print("Predicted class:", model.config.id2label[predicted_class_idx])
 ```
 
-Currently, both the feature extractor and model  support PyTorch. Tensorflow and JAX/FLAX are coming soon, and the API of ViTFeatureExtractor might change.
+For more code examples, we refer to the [documentation](https://huggingface.co/transformers/model_doc/vit.html#).
 
 ## Training data
 
