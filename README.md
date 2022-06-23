@@ -4,7 +4,7 @@ tags:
 - vision
 - image-classification
 datasets:
-- imagenet
+- imagenet-1k
 - imagenet-21k
 widget:
 - src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
