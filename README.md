@@ -17,6 +17,12 @@ widget:
 
 # Vision Transformer (base-sized model) 
 
+| ![Pull figure](https://s3.amazonaws.com/moonup/production/uploads/1670350379252-62441d1d9fdefb55a0b7d12c.png) |
+|:--:|
+| <b> Figure 1 from the paper [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) describing the model's architecture </b>|
+
+
+
 Vision Transformer (ViT) model pre-trained on ImageNet-21k (14 million images, 21,843 classes) at resolution 224x224, and fine-tuned on ImageNet 2012 (1 million images, 1,000 classes) at resolution 224x224. It was introduced in the paper [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929) by Dosovitskiy et al. and first released in [this repository](https://github.com/google-research/vision_transformer). However, the weights were converted from the [timm repository](https://github.com/rwightman/pytorch-image-models) by Ross Wightman, who already converted the weights from JAX to PyTorch. Credits go to him. 
 
 Disclaimer: The team releasing ViT did not write a model card for this model so this model card has been written by the Hugging Face team.
