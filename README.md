@@ -3,6 +3,8 @@ license: apache-2.0
 tags:
 - vision
 - image-classification
+- legal
+- art
 datasets:
 - imagenet-1k
 - imagenet-21k
@@ -13,6 +15,12 @@ widget:
   example_title: Teapot
 - src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
   example_title: Palace
+language:
+- en
+metrics:
+- accuracy
+library_name: adapter-transformers
+pipeline_tag: image-classification
 ---
 
 # Vision Transformer (base-sized model) 
