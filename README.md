@@ -13,6 +13,12 @@ widget:
   example_title: Teapot
 - src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/palace.jpg
   example_title: Palace
+language:
+- en
+metrics:
+- accuracy
+library_name: diffusers
+pipeline_tag: image-classification
 ---
 
 # Vision Transformer (base-sized model) 
