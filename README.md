@@ -3,9 +3,12 @@ license: apache-2.0
 tags:
 - vision
 - image-classification
+- art
+- music
 datasets:
 - imagenet-1k
 - imagenet-21k
+- Salesforce/dialogstudio
 widget:
 - src: https://huggingface.co/datasets/mishig/sample_images/resolve/main/tiger.jpg
   example_title: Tiger
